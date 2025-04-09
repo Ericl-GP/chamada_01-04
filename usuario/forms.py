@@ -9,7 +9,7 @@ class UsuarioForm(UserCreationForm):
         ]
         class Meta:
             model = User
-            fields = ['username','email','last_name','first_name',]
+            fields = ['username','email','last_name','first_name']
         username = forms.CharField(label='Matricula: ')
         email = forms.EmailField(label='E-mail: ')
         last_name = forms.CharField(label='Nome Completo: ')
